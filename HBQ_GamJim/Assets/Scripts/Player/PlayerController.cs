@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
     private Rigidbody2D rb;
 
     public float speed;
     public float jumpForce;
 
-    
+    [Header("Player State")]
+    public float health;
+    public bool isDead;
+
     [Header("Ground Check")]
     public Transform groundCheck;
     public float checkRadius;
@@ -75,5 +78,10 @@ public class PlayerController : MonoBehaviour
     public void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+    }
+
+    public void GetHit(float damage)
+    {
+        health = 0;
     }
 }
