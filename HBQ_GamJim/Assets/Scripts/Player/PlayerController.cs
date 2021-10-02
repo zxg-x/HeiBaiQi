@@ -68,7 +68,6 @@ public class PlayerController : MonoBehaviour
         isGround = Physics2D.OverlapCircle(groundCheck.position,checkRadius,groundLayer);
         if(isGround)
         {
-            
             rb.gravityScale = 1;
         }
     }

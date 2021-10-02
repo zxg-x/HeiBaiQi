@@ -15,7 +15,7 @@ TagManager:
   - 
   - Background
   - Player
-  - 
+  - Platform
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: BackGoround
     uniqueID: 2750023325
+    locked: 0
+  - name: Platform
+    uniqueID: 1624934207
     locked: 0
   - name: Player
     uniqueID: 4134281995
